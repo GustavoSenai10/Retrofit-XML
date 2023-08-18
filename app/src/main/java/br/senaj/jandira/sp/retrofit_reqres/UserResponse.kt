@@ -4,11 +4,29 @@ import android.provider.ContactsContract.CommonDataKinds.Email
 import com.google.gson.annotations.SerializedName
 
 data class UserResponse (
+
+    //ID
     @SerializedName(
         "id"
     )var id:Int? = 0,
-    @SerializedName("email")var email:String =  "",
-    @SerializedName("first_name")var first_name:String =  "",
-    @SerializedName("last_name")var last_name:String =  "",
-    @SerializedName("avatar")var avatar:String =  ""
+
+    //E-mail
+    @SerializedName(
+        "email"
+    )var email:String =  "",
+
+    //Primero nome
+    @SerializedName(
+        "first_name"
+    )var first_name:String =  "",
+
+    //Sobrenome
+    @SerializedName(
+        "last_name"
+    )var last_name:String =  "",
+
+    //Foto
+    @SerializedName(
+        "avatar"
+    )var avatar:String =  ""
 )
